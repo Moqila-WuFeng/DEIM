@@ -3,7 +3,7 @@ __include__: [
   '../base/deim.yml',
 ]
 
-print_freq: 1 # 每次都打印
+print_freq: 400 # 每次都打印
 
 output_dir: ./outputs/deim_hgnetv2_s_visdrone
 
