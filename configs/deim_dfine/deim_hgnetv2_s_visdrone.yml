@@ -1,9 +1,18 @@
 __include__: [
   './dfine_hgnetv2_s_coco.yml',
-  '../base/deim.yml'
+  '../base/deim.yml',
+  '/home/mxs/gf/DEIM/configs/dataset/visdrone_det.yml'
 ]
 
-output_dir: ./outputs/deim_hgnetv2_s_coco
+print_freq: 1 # 每次都打印
+
+output_dir: ./outputs/deim_hgnetv2_s_visdrone
+
+train_dataloader:
+  total_batch_size: 8
+
+val_dataloader:
+  total_batch_size: 8
 
 optimizer:
   type: AdamW

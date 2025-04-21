@@ -1,6 +1,6 @@
 print_freq: 100
 output_dir: './logs'
-checkpoint_freq: 12
+checkpoint_freq: 12  # 每12个epoch保存一次
 
 
 sync_bn: True
