@@ -4,6 +4,7 @@ __include__: [
   '../base/dataloader.yml',
   '../base/optimizer.yml',
   '../base/dfine_hgnetv2.yml',
+  '/home/mxs/gf/DEIM/configs/dataset/visdrone_det.yml',
 ]
 
 output_dir: ./output/dfine_hgnetv2_s_coco
