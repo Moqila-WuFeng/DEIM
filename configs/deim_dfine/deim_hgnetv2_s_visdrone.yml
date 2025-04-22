@@ -3,7 +3,7 @@ __include__: [
   '../base/deim.yml',
 ]
 
-print_freq: 400 # 每次都打印
+print_freq: 200 # 每200次打印
 
 output_dir: ./outputs/deim_hgnetv2_s_visdrone
 
@@ -35,11 +35,11 @@ train_dataloader:
     transforms:
       policy:
         epoch: [4, 64, 120]   # list 
-  total_batch_size: 8
+  total_batch_size: 4
 
   collate_fn:
     mixup_epochs: [4, 64]
     stop_epoch: 120
 
 val_dataloader:
-  total_batch_size: 8
+  total_batch_size: 4

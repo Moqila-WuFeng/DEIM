@@ -199,3 +199,4 @@ class BatchImageCollateFunction(BaseCollateFunction):
                 raise NotImplementedError('')
 
         return images, targets
+
