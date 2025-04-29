@@ -35,11 +35,11 @@ train_dataloader:
     transforms:
       policy:
         epoch: [4, 64, 120]   # list 
-  total_batch_size: 4
+  total_batch_size: 2
 
   collate_fn:
     mixup_epochs: [4, 64]
     stop_epoch: 120
 
 val_dataloader:
-  total_batch_size: 4
+  total_batch_size: 2
