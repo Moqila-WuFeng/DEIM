@@ -485,7 +485,7 @@ class HGNetv2(nn.Module):
 
         # 计算输出特征参数（用于下游任务）
         self._out_strides = [4, 8, 16, 32]      # 各阶段特征图下采样率
-        self._out_channels = [stage_config[k][2] for k in stage_config]    # 各阶段输出通道数
+        self._out_channels = [stage_config[k][2] for k in stage_config]    # 各阶段的out_channels
 
         # 构建网络模块 -------------------------------------------------
         # 1. Stem模块（特征预处理）
