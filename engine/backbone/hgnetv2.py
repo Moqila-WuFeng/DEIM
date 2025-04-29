@@ -560,9 +560,9 @@ class HGNetv2(nn.Module):
 
 
     def _freeze_norm(self, m: nn.Module):
-         """
+        """
         递归冻结所有BN层参数
-        原理：将普通BN层替换为冻结参数的FrozenBatchNorm2d
+        原理: 将普通BN层替换为冻结参数的FrozenBatchNorm2d
         """
         if isinstance(m, nn.BatchNorm2d):
             m = FrozenBatchNorm2d(m.num_features)
@@ -574,7 +574,7 @@ class HGNetv2(nn.Module):
         return m
 
     def _freeze_parameters(self, m: nn.Module):
-         """
+        """
         冻结模块所有可训练参数
         应用场景：冻结stem或早期stage的参数
         """
