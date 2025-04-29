@@ -3,9 +3,9 @@ __include__: [
   '../base/deim.yml',
 ]
 
-print_freq: 200 # 每200次打印
+print_freq: 500 # 每500次打印
 
-output_dir: ./outputs/deim_hgnetv2_s_visdrone
+output_dir: ./outputs/deim_hgnetv2_s_visdrone_4
 
 optimizer:
   type: AdamW
@@ -43,3 +43,6 @@ train_dataloader:
 
 val_dataloader:
   total_batch_size: 2
+
+test_dataloader:
+  total_batch_size: 4

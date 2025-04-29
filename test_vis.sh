@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=0 torchrun --master_port=7777 --nproc_per_node=1 train.py -c /home/mxs/gf/DEIM/configs/deim_dfine/deim_hgnetv2_s_visdrone.yml --test-only -r model.pth
+CUDA_VISIBLE_DEVICES=0 torchrun --master_port=7777 --nproc_per_node=1 train.py -c /home/mxs/gf/DEIM/configs/deim_dfine/deim_hgnetv2_s_visdrone.yml --test-only -r /home/mxs/gf/DEIM/outputs/deim_hgnetv2_s_visdrone_2/best_stg2.pth
